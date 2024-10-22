@@ -12,6 +12,8 @@ bool SortByName(const Item lName, const Item rName)
 	return lName.Name < rName.Name;
 }
 
+
+
 void PrintInventory(std::vector<Item>& _inventory)
 {
 	std::cout << "L'inventaire contient : " << std::endl;
@@ -21,9 +23,35 @@ void PrintInventory(std::vector<Item>& _inventory)
 		std::cout << "Nom : " << i.Name << ", Poids : " << i.weight << std::endl;
 	}
 }
+
 void AddElementInventory(std::vector<Item>& _inventory, std::string _name, int _weight)
 {
 	_inventory.push_back({ _name, _weight });
+
+	int temp = 0;
+
+	for (Item& i : _inventory)
+	{
+		temp += i.weight;
+	}
+	
+	if (temp > _inventory.back().InventoryLimit)
+	{
+		
+		std::cout << "Limite depasse ! Nous devons supprimer des objets pour rajouter " << _name << std::endl;
+
+		sort(_inventory.begin(), _inventory.end(), SortByWeight);
+
+		while (temp > _inventory.back().InventoryLimit)
+		{
+			temp -= _inventory.front().weight;
+			_inventory.erase(_inventory.begin());
+
+		}
+		
+		PrintInventory(_inventory);
+	}
+
 }
 
 void DeleteElementInventory(std::vector<Item>& _inventory, std::string _name)

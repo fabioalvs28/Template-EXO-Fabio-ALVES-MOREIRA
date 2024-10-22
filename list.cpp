@@ -23,3 +23,12 @@ void SortList(std::list<int>& myList)
 {
 	myList.sort();
 }
+
+int Get(std::list<int>& myList, int _i) 
+{
+	std::list<int>::iterator it = myList.begin();
+	for (int i = 0; i < _i; i++) {
+		++it;
+	}
+	return *it;
+}

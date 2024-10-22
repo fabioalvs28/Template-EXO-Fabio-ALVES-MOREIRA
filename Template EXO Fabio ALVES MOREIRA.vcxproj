@@ -128,16 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="inventory.cpp" />
+    <ClCompile Include="Exo bonus.cpp" />
     <ClCompile Include="list.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Exo 1.cpp" />
     <ClCompile Include="set.cpp" />
-    <ClCompile Include="Template EXO Fabio ALVES MOREIRA.cpp" />
+    <ClCompile Include="Exo 2.cpp" />
+    <ClCompile Include="template.cpp" />
+    <ClCompile Include="tournament.cpp" />
     <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inventory.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="set.h" />
+    <ClInclude Include="tournament.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

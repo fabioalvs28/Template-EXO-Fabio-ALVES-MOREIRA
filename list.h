@@ -1,9 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <vector>
 #include <list>
-#include <set>
 #include <algorithm>  
 #include <string>
 
@@ -14,6 +12,7 @@ void PrintList(std::list<int>& myList);
 void AddElementList(std::list<int>& myList, int _n);
 void DeleteAtList(std::list<int>& myList, int _n);
 void SortList(std::list<int>& myList);
+int Get(std::list<int>& myList, int _i);
 
 #endif // !LIST_H__
 
