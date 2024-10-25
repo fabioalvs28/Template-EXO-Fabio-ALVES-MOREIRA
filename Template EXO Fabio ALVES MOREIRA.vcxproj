@@ -140,6 +140,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="arrows.h" />
+    <ClInclude Include="Character.h" />
     <ClInclude Include="inventory.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="nono.h" />
