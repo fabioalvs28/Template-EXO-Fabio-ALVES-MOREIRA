@@ -127,19 +127,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Exo 4.cpp" />
     <ClCompile Include="inventory.cpp" />
     <ClCompile Include="Exo bonus.cpp" />
     <ClCompile Include="list.cpp" />
     <ClCompile Include="Exo 1.cpp" />
     <ClCompile Include="set.cpp" />
     <ClCompile Include="Exo 2.cpp" />
-    <ClCompile Include="template.cpp" />
+    <ClCompile Include="Exo 3.cpp" />
     <ClCompile Include="tournament.cpp" />
     <ClCompile Include="vector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="arrows.h" />
     <ClInclude Include="inventory.h" />
     <ClInclude Include="list.h" />
+    <ClInclude Include="nono.h" />
+    <ClInclude Include="projectiles.h" />
     <ClInclude Include="set.h" />
     <ClInclude Include="tournament.h" />
     <ClInclude Include="vector.h" />
