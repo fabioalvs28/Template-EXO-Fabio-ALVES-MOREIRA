@@ -34,4 +34,5 @@ int main()
 	calculStatistique(vie, sizeVie);
 	calculStatistique(vieFloat , sizeVieFloat);
 
+	return 0;
 };
